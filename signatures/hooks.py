@@ -145,6 +145,14 @@ app_license = "mit"
 # 	}
 # }
 
+doc_events = {
+	"Purchase Order": {
+		"on_submit": "signatures.overrides.apply_signatures.purchase_order_update_signature_on_submit",
+	},
+	"Gate Outward Pass": {
+		"on_submit": "signatures.overrides.apply_signatures.gate_outward_pass_update_signature_on_submit",
+	}
+}
 # Scheduled Tasks
 # ---------------
 
